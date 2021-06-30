@@ -1,7 +1,7 @@
 function refactorResponse(data) {
     let covidData = {};
     data?.map((item) => {
-      covidData[item.country] = {
+     return covidData[item.country] = {
         active: item.active,
         total: item.cases,
         deaths: item.deaths,
